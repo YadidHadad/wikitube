@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()">
+    <header class=" full">
+        <nav class="flex space-between">
+            <h1 class="logo">wikitube</h1>
+            <form action="" onsubmit="onSearch(event)" class="flex align-center">
+                <input id="search" class="input search" type="search" placeholder="what's on your mind?" />
+                <!-- <input id="search" class="input search" type="submit" value="" /> -->
+                <button class="btn search">search</button>
+            </form>
+        </nav>
+    </header>
+    <main class=" full">
+        <div class="flex wrap">
+            <section class="videos-library">
+            </section>
+            <section class="video-player-container flex align-center justify-center  grow">
+                <iframe class="video-player" width="560" height="315" src="" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <!-- <iframe width="448" height="315" class="video-player" src=""> -->
+                </iframe>
+            </section>
+
+        </div>
+    </main>
+    <section class="wikipedia-container full">
+        <div class="wikipedia">
+
+            <div class="wiki-value">
+                <h2 class="wiki-title"></h2>
+                <div class="wiki-snippet"></div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/lib/axios.js"></script>
+    <script src="/js/service/storage.service.js"></script>
+    <script src="/js/service/index.service.js"></script>
+    <script src="/js/index.controller.js"></script>
+</body>
+
+</html>
