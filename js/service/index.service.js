@@ -5,7 +5,6 @@ const STORAGE_KEY_WIKI_DATA = 'wikiDB'
 
 var gYT
 var gWiki
-
 const YT_KEY = 'AIzaSyDTiLagRkwHbsq3-gzGf0QmJihP9R-6DDg'
 
 function getYTDataByValue(value = 'beatles') {

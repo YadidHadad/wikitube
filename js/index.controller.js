@@ -57,6 +57,7 @@ function renderYTLibrary() {
     changePlayerSrc(src)
     document.querySelector('.yt-option:first-child').classList.add('yt-option-active')
 
+
 }
 
 function changePlayerSrc(src, element = null) {
